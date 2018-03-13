@@ -27,6 +27,12 @@
     <!-- Font Awesome Style -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- jQuery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+          
+            <!-- nanogallery2 -->
+            <link  href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+            <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
 <script id="chatBroEmbedCode">
 /* Chatbro Widget Embed Code Start */
 function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}
@@ -551,7 +557,33 @@ ChatbroLoader({encodedChatId: '1pPJ'});
             <div class="fb-comments" data-href="https://www.facebook.com/pg/gra.ruh/reviews/" data-numposts="5" data-width="100%"></div>
         </div>
     </section>
+<h1>gallery made with nanogallery2</h1>
 
+              <!-- ### start of the gallery definition ### -->
+              <div id="nanogallery2"
+              
+                 
+                  data-nanogallery2 = '{
+                        "thumbnailHeight":  300,
+                        "thumbnailWidth":   300,
+                        
+        "thumbnailLevelUp":  true,
+        "thumbnailBorderHorizontal":0,
+                      "thumbnailBorderVertical":0,
+                       "breadcrumbAutoHideTopLevel": false,
+                        "itemsBaseURL":     "/img/img/"
+                      }' >
+                      
+         <a href="/img/img/"           data-ngkind="album" data-ngid="1"                     data-ngthumb="gra17.jpg" >Album A</a>
+  <a href="gra17.jpg"                     data-ngid="10" data-ngalbumid="1" data-ngthumb="gra17.jpg" >Image 1 / album A</a>
+  <a href="gra17.jpg"                     data-ngid="11" data-ngalbumid="1" data-ngthumb="gra17.jpg" >Image 2 / album A</a>
+
+  <!-- SECOND ALBUM -->
+  <a href="/img/img/"          data-ngkind="album" data-ngid="2"                     data-ngthumb="gra6.jpg" >Album B</a>
+  <a href="gra6.jpg"                     data-ngid="20" data-ngalbumid="2" data-ngthumb="gra6.jpg"    >Image1</a>
+  <a href="gra6.jpg"                     data-ngid="21" data-ngalbumid="2" data-ngthumb="gra6.jpg"    >Image2</a>
+  <a href="gra6.jpg"                     data-ngid="22" data-ngalbumid="2" data-ngthumb="gra6.jpg"    >Image3</a>
+              </div>
     <footer id="myFooter">
         <div class="container">
             <div class="row">
@@ -596,10 +628,21 @@ ChatbroLoader({encodedChatId: '1pPJ'});
         </div>
     </footer>
 
+              
+
+<!--
+    <div id="nanogallery2" data-nanogallery2='{
+        "kind":    "google",
+        "userID":  "6530518167878993937",
+        "breadcrumbAutoHideTopLevel": false
+      }'>
+    </div>
+-->
+              <!-- ### end of the gallery definition ### -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrollPosStyler.js"></script>
     <script src="js/swiper.min.js"></script>
